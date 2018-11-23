@@ -24,7 +24,7 @@
             s.availableForTradingQty,
             s.marketValue,
             s.unrealizedPL,
-            (((s.costBasis - s.unrealizedPL) / s.costBasis) * 100).toFixed(2),
+            -(((s.costBasis - s.unrealizedPL) / s.costBasis) * 100 - 100).toFixed(2),
             s.avgPrice,
             s.lastTrade,
             s.unrealizedDayPLPercent,
